@@ -31,7 +31,7 @@ svg{
 .side-bar{
     background-color:#001609 ;
     width: 270px;
-    height: 100vh;
+    height: 170vh;
     top: 30px;
     z-index: -1;
 }
@@ -206,6 +206,7 @@ svg{
 
 .left-right-container{
     display: flex;
+    justify-content: center;
 }
 
 .graph-bar{

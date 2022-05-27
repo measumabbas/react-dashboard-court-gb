@@ -63,3 +63,24 @@
     border-radius: 50%;
     padding: 7px;
 }
+
+.down-charts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+
+.down-left-chart, .down-right-chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.down-left-chart{
+    background-color: #001609;
+}
+.down-right-chart{
+    background-color: #001609;
+}

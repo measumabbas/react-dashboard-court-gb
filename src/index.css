@@ -21,3 +21,177 @@
     font-size: 20px;
     font-weight: bold;
 }
+
+
+.modal-main{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100000;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.modal-header{
+    background-color: #001609;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: fixed;
+    width: 42.2rem;
+  
+}
+
+.modal-header p{
+    color: #fff;
+    font-size: 20px;
+}
+.modal{
+    width: 50%;
+    background-color: #fff;
+    height: 95vh;
+    position: fixed;
+    top: 15px;
+    bottom: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 3px;
+    box-shadow: 0 4px 1rem #000;
+    
+}
+
+.modal-body{
+    margin-top: 70px;
+}
+.modal::-webkit-scrollbar{
+    width: 7px;
+}
+.modal::-webkit-scrollbar-track {
+    border-radius: 7px;
+    
+}
+
+.modal::-webkit-scrollbar-thumb {
+    /* border-radius: 10px; */
+    box-shadow: inset 6px 6px 6px #000; 
+   
+}
+.modal-body{
+    padding: 15px;
+}
+
+.modal label{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.title-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.title-input .input-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+.title-input .input-item input,
+.title-input .input-item textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+}
+.input-item textarea{
+    height: 100px;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.furthur-input{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.furthur-input .input-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+select:focus{
+    outline: none;
+}
+select{
+    padding: 10px;
+}
+input[type='date']{
+    padding: 10px;
+}
+.incase{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.incase p{
+    font-size: 20px;
+    
+}
+
+.incase-inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 10px;
+}
+.incase-inputs .input-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.incase-inputs .input-item input{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+} 
+
+input,textarea{
+    border: 1px solid rgb(170, 169, 169);
+}
+
+.remarks .input-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.remarks{
+    margin-top: 10px;
+}
+
+.submit-inputs{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.submit-inputs input{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+}

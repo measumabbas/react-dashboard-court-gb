@@ -5,7 +5,7 @@ import SideBar from './components/SideBar';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Judiciary from './components/Judiciary';
 import Institution from './components/Institution';
-import ProposedList from './components/ProposedList';
+import ProposedList from './components/ProposedList/ProposedList';
 import {useLocation} from 'react-router-dom'
 import Profile from './components/Profile/Profile';
 import { useState } from 'react';
@@ -13,6 +13,7 @@ import Modal from './components/addCaseModal/Modal';
 import Dashboard from './components/Dashboard/Dashboard';
 import Hearings from './components/Hearings/Hearings';
 import Registrar from './components/Registrar/Registrar';
+import Login from './components/Login/Login';
 
 function App() {
 
@@ -21,6 +22,9 @@ function App() {
   return (
     <BrowserRouter>
     <div className="nav-side-container">
+      <Routes>
+        <Route path='/login' element={<Login/>}/>
+      </Routes>
       <Header setUserModal={setUserModal} userModal={userModal}/>
       
       
