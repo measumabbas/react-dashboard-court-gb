@@ -1,7 +1,7 @@
 import React from 'react'
 import './modal.css'
 import { AiOutlineClose } from 'react-icons/ai'
-const Modal = (caseModal,setCaseModal) => {
+const Modal = ({caseModal,setCaseModal}) => {
     return (
         <div className='modal-main'>
             <div className="modal">

@@ -1,7 +1,7 @@
 import React from 'react'
 import './profile.css'
 
-const Profile = () => {
+const Profile = ({userModal,setUserModal}) => {
   return (
     <div>
         <div className="profile2">

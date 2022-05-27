@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {VscLaw} from 'react-icons/vsc'
 import {FaUniversalAccess} from 'react-icons/fa'
 import {BsFillBriefcaseFill} from 'react-icons/bs'
@@ -8,8 +8,10 @@ import {RiLogoutBoxLine} from 'react-icons/ri'
 import {AiOutlinePlus} from 'react-icons/ai'
 import Profile from './Profile/Profile'
 import Modal from './addCaseModal/Modal'
-const Judiciary = ({caseModal,setCaseModal}) => {
+const Judiciary = () => {
 
+
+  const [caseModal,setCaseModal] = useState(false)
   return (
     <div>
         <div className="testimonials">
@@ -64,6 +66,10 @@ const Judiciary = ({caseModal,setCaseModal}) => {
 
 
         </div>
+
+        {
+          caseModal && <Modal caseModal={caseModal} setCaseModal={setCaseModal}/>
+        }
     </div>
   )
 }

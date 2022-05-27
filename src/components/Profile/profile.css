@@ -3,7 +3,7 @@
     width: 200px;
     position: absolute;
     right: 10px;
-    top: 30px;
+    top: 60px;
     border: 2px solid #e5e7eb;
     border-radius: 8px;
     
@@ -30,3 +30,4 @@
     background-color: #f2f4f6;
     cursor: pointer;
 }
+
