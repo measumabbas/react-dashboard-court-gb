@@ -15,7 +15,7 @@ const SideBar = () => {
     return (
         <div>
             <div className="side-bar">
-                <Link to='/'>
+                <Link to='/dashboard/dash'>
                     <div className={`list-item ${location.pathname === '/' ? 'back' : 'back-normal'}`}>
                         <div className="icon">
                             <MdDashboardCustomize />
@@ -25,7 +25,7 @@ const SideBar = () => {
                         </div>
                     </div>
                 </Link>
-                <Link to='/institution'>
+                <Link to='/dashboard/institution'>
                     <div className={`list-item ${location.pathname === '/institution' ? 'back' : 'back-normal'}`}>
                         <div className="icon">
                             <FaUniversity />
@@ -36,7 +36,7 @@ const SideBar = () => {
                     </div>
                 </Link>
 
-                <Link to='/judiciary'>
+                <Link to='/dashboard/judiciary'>
 
                     <div className={`list-item ${location.pathname === '/judiciary' ? 'back' : 'back-normal'}`}>
                         <div className="icon">
@@ -48,7 +48,7 @@ const SideBar = () => {
                     </div>
                 </Link>
 
-                <Link to='/proposedlist'>
+                <Link to='/dashboard/proposedlist'>
 
                     <div className={`list-item ${location.pathname === '/proposedlist' ? 'back' : 'back-normal'}`}>
                         <div className="icon">
@@ -60,7 +60,7 @@ const SideBar = () => {
                     </div>
                 </Link>
 
-                <Link to='/registrar'>
+                <Link to='/dashboard/registrar'>
 
                     <div className={`list-item ${location.pathname === '/registrar' ? 'back' : 'back-normal'}`}>
                         <div className="icon">
@@ -72,7 +72,7 @@ const SideBar = () => {
                     </div>
                 </Link>
 
-                <Link to='/hearings'>
+                <Link to='/dashboard/hearings'>
 
                     <div className={`list-item ${location.pathname === '/hearings' ? 'back' : 'back-normal'}`}>
                         <div className="icon">

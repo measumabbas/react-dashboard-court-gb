@@ -1,20 +1,25 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import './signup.css';
+import logo from './gb.png'
 const SignUp = () => {
   return (
-    <div className="container">
-        <div className="main-section">
-            <div className="text-section">
+    <div className="sign-container">
+        <div className="sign-main-section">
+            <div className="sign-text-section">
                 <div className="head-sec">
-                    <img src="logo1.png" alt=""/>
-                    <h2>Tourism Departement, <br/>Gilgit Baltistan</h2>
+                    <div className="img">
+                    <img src={logo} alt="" />
+
+                    </div>
+                    <h2>Supreme Applet Court Gilgit Baltistan</h2>
                 </div>
             </div>
-            <div className="main-log">
-                <div className="login-section">
-                    <div className="log-section">
-                        <img src="Gilgit_Baltistan_Government_Logo.svg.png" alt=""/>
-                        <h2>Registration <br/>Form</h2>
+            <div className="sign-main-log">
+                <div className="signup-section">
+                    <div className="sign-section">
+                        <img src={logo} alt=""/>
+                        <h2>Registration Form</h2>
                     </div>
                     <div className="from-sec">
                         <form action="">
@@ -33,11 +38,14 @@ const SignUp = () => {
                             <input type="password" placeholder="Password"/>
                             <input type="password" placeholder="Retype Password"/>
                             <br/>
-                            <div className="log-sec">
+                            <div className="sign-sec">
+                                <Link to='/dashboard/dash'>
+
                                 <input type="button" value="SIGNUP"/>
+                                </Link>
                             </div>
                             <div className="sign-link">
-                                <h3>If you have already account?<a href="">Login</a></h3>
+                                <h3>If you have already account?<Link to='/'>Login</Link></h3>
                             </div>
                         </form>
                     </div>

@@ -2,9 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow: hidden; */
 }
-.container{
+.login-container{
     background-image: url('./court.jpg');
     height: 100vh;
     background-size: cover;
@@ -13,19 +12,27 @@
     justify-content: center;
 }
 
-.main-section{
+.login-main-section{
     background-color: rgba(10, 22, 13, 0.658);
     height: 100vh;
     width: 100%;
     display: flex;
 }
-.text-section{
+.login-text-section{
     color: white;
     font-size: 30px;
     margin: auto;
     line-height: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.text-section img{
+.login-text-section h2{
+    text-align: center;
+}
+
+.login-text-section img{
     height: 200px;
     width: 200px;
 }
@@ -103,7 +110,6 @@
     margin-left: 13px;
     margin-top: 25px;
     word-spacing: 1px;
-    /* letter-spacing: 0.5px;  */
     cursor: pointer;
 }
 .sign-link h3{

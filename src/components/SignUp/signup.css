@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    background-image: url(Featured.jpg);
+.sign-container{
+    background-image: url('./court.jpg');
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -12,13 +12,13 @@
     justify-content: center;
 }
 
-.main-section{
+.sign-main-section{
     background-color: rgba(10, 22, 13, 0.658);
     height: 100vh;
     width: 100%;
     display: flex;
 }
-.text-section{
+.sign-text-section{
     color: white;
     font-size: 30px;
     line-height: 70px;
@@ -29,17 +29,17 @@
     justify-content: center;
     flex-direction: column;
 }
-.text-section img{
+.sign-text-section img{
     height: 200px;
     width: 200px;
 }
-.main-log{
+.sign-main-log{
     width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.login-section{
+.signup-section{
     background-color: white;
     height: 550px;
     width: 650px;
@@ -52,7 +52,7 @@
     display: flex;
 
 }
-.login-section img{
+.signup-section img{
     height: 60px;
     width: 60px;
 }
@@ -64,14 +64,14 @@
     padding: 30px;
     word-spacing: 1px;
 }
-.login-section h2{
+.signup-section h2{
     padding: 15px;
     font-weight: 700;
 }
-.login-section form{
+.signup-section form{
     width: 100%;
 }
-.login-section input,select{
+.signup-section input,select{
     width: 45%;
     padding: 13px;
     margin: 13px;
@@ -86,7 +86,7 @@
     border-radius: 5px;
 }
 
-.log-sec input{
+.sign-sec input{
    background-color:black;
    margin-top: 20px;
    color: white;
@@ -95,16 +95,14 @@
    transition-duration: 0.5s;
    width: 95%;
 }
-.log-sec input:hover{
+.sign-sec input:hover{
     background-color: #fff;
     color: black;
 }
 .sign-link{
-    /* margin-left: 13px; */
     margin-top: 20px;
     word-spacing: 1px;  
     text-align: center;
-    /* letter-spacing: 0.5px;  */
     cursor: pointer;
 }
 .sign-link h3{
@@ -125,4 +123,30 @@
 .gender-section{
     display: flex; 
     margin: auto;
+}
+
+.sign-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    background-color: rgba(255,255,255,0.3);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+.head-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-sec h2{
+    text-align: center;
 }

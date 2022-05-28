@@ -46,7 +46,7 @@ const Judiciary = () => {
               <p>Closed Cases</p>
             </div>
           </div>
-          <Link to='/modal'>
+          <Link to='/dashboard/modal'>
           <div className="testimonial" style={{backgroundColor:'#01A16C'}}>
             <div className="icon">
               <AiOutlinePlus style={{width:'90px',height:'90px'}}/>
@@ -56,14 +56,16 @@ const Judiciary = () => {
             </div>
           </div>
           </Link>
-          <div className="testimonial" style={{backgroundColor:'#009901'}}>
-            <div className="icon">
-              <RiLogoutBoxLine style={{width:'90px',height:'90px'}}/>
+          <Link to='/'>
+            <div className="testimonial" style={{backgroundColor:'#009901'}}>
+              <div className="icon">
+                <RiLogoutBoxLine style={{width:'90px',height:'90px'}}/>
+              </div>
+              <div className="text">
+                <p>Logout</p>
+              </div>
             </div>
-            <div className="text">
-              <p>Logout</p>
-            </div>
-          </div>
+          </Link>
 
 
         </div>
