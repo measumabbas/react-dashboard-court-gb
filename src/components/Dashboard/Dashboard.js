@@ -63,7 +63,7 @@ const Dashboard = () => {
               interactive={false}
               height={150}
               width={150}
-              colors={["#fff", "#F2143F"]}
+              colors={["#fff", "#FFDB58"]}
               innerRadius={0.5}
             />
           </div>
@@ -73,18 +73,18 @@ const Dashboard = () => {
               data={[
                 {
                   label: "",
-                  value: 25,
+                  value: 40,
                 },
                 {
                   label: "",
-                  value: 75,
+                  value: 60,
                 },
               ]}
               legend={false}
               interactive={false}
               height={150}
               width={150}
-              colors={["#fff", "#FCA508"]}
+              colors={["#fff", "#1FACA5"]}
               innerRadius={0.5}
             />
           </div>

@@ -1,14 +1,15 @@
 import React from 'react'
 import './modal.css'
 import { AiOutlineClose } from 'react-icons/ai'
-const Modal = ({caseModal,setCaseModal}) => {
+import { AiFillFolderAdd } from 'react-icons/ai'
+const Modal = () => {
     return (
         <div className='modal-main'>
             <div className="modal">
                     
                 <div className="modal-header">
                     <p>Add a new Case</p>
-                    <AiOutlineClose style={{height:'20px',width:'20px',cursor:'pointer'}} onClick={()=> setCaseModal(!caseModal)}/>
+                    <AiFillFolderAdd/>
                 </div>
                 <div className="modal-body">
                     <form>
@@ -80,8 +81,8 @@ const Modal = ({caseModal,setCaseModal}) => {
                         </div>
 
                         <div className="submit-inputs">
-                            <input type="reset" value='Reset Fields' style={{backgroundColor:'#DC143C'}}/>
-                            <input type="submit" value='Create Case' style={{backgroundColor:'#34A853'}}/>
+                            <input type="reset" value='Reset Fields' style={{backgroundColor:'#DC143C',padding:'10px'}}/>
+                            <input type="submit" value='Create Case' style={{backgroundColor:'#34A853',padding:'10px'}} />
                         </div>
             </form>
                 </div>

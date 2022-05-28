@@ -39,6 +39,7 @@ function App() {
           <Route path='/hearings' element={<Hearings/>}/>
           <Route path='/registrar' element={<Registrar/>}/>
           <Route path='/sidebar' element={<SideBar/>}/>
+          <Route path='/modal' element={<Modal/>}/>
         </Routes>  
         {
           userModal && <Profile onBlur={()=> setUserModal(!userModal)}/>            

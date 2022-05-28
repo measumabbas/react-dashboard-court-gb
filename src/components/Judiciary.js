@@ -8,10 +8,9 @@ import {RiLogoutBoxLine} from 'react-icons/ri'
 import {AiOutlinePlus} from 'react-icons/ai'
 import Profile from './Profile/Profile'
 import Modal from './addCaseModal/Modal'
+import { Link } from 'react-router-dom'
 const Judiciary = () => {
 
-
-  const [caseModal,setCaseModal] = useState(false)
   return (
     <div>
         <div className="testimonials">
@@ -47,7 +46,8 @@ const Judiciary = () => {
               <p>Closed Cases</p>
             </div>
           </div>
-          <div className="testimonial" style={{backgroundColor:'#01A16C'}} onClick={()=> setCaseModal(!caseModal)}>
+          <Link to='/modal'>
+          <div className="testimonial" style={{backgroundColor:'#01A16C'}}>
             <div className="icon">
               <AiOutlinePlus style={{width:'90px',height:'90px'}}/>
             </div>
@@ -55,6 +55,7 @@ const Judiciary = () => {
               <p>Add Case</p>
             </div>
           </div>
+          </Link>
           <div className="testimonial" style={{backgroundColor:'#009901'}}>
             <div className="icon">
               <RiLogoutBoxLine style={{width:'90px',height:'90px'}}/>
@@ -66,10 +67,6 @@ const Judiciary = () => {
 
 
         </div>
-
-        {
-          caseModal && <Modal caseModal={caseModal} setCaseModal={setCaseModal}/>
-        }
     </div>
   )
 }
